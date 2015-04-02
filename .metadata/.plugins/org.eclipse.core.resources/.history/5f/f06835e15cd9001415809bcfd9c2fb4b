@@ -1,0 +1,149 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@page import="java.util.List" %>
+       <%@page import="hotel.ejb.ics.Room" %>
+<!--BOOKING-->
+
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+	<title>Ghost Hotel</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" media="all" href="calander/jsDatePick_ltr.min.css" />
+	<script type="text/javascript" src="calander/jsDatePick.min.1.3.js"></script>
+
+</head>
+<body>
+	<div id="page">
+			<div id="header">
+				<img src ="bilder/ghlogo.jpg" alt="header"/>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+						<a href="StartPage.html"><strong>Home</strong></a>
+						</li>
+						<li>
+							<a href="Booking.jsp"><strong>Booking</strong></a>
+						</li>
+						<li>
+							<a href="Rooms.html"><strong>Rooms</strong></a>
+						</li>
+						<li>
+							<a href="About.html"><strong>About</strong></a>
+						</li>
+						<li>
+							<a href="Test.html"><strong>Test</strong></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div id="bookingbox">
+					<div>
+						<div>
+							<p>In the booking table below, please fill out the following information.</p>
+							<div id="booking">
+								<div id=resultbox>
+								<p> Available rooms are listed below</p>
+								<% List<Room> listRoom = (List<Room>) request.getAttribute ("availableRooms");
+									
+									if (listRoom !=null){
+										for (Room r:listRoom){
+											%>
+											<p>Room number: <%=r.getRoomNr()%>  Room type: <%=r.getRoomType()%>  Capacity: <%=r.getCapacity()%>  Price: <%=r.getPrice()%> <p>
+											<hr>
+										<%}
+										}
+										%>
+
+								</div>
+							<form method="post" action="MainServlet">
+							 <label for="capacity">Capacity</label>
+							 <br>
+								<select name="capacity" id="capacity">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select><br><br>
+							 <label for="roomtype">Room type</label>
+							 <br>
+								<select id="roomtype" name="roomType">
+									<option>Standard</option>
+									<option>Double</option>
+									<option>Suite</option>
+								</select><br><br>
+								<label for="price">Price range</label>
+								<br>
+									<select name="price" id="priceField">
+										<option value="400">400 SEK</option>
+										<option value="750">750 SEK</option>
+										<option value="1200">1200 SEK</option>
+									</select><br><br>
+							
+							
+							<label for="startDate">Date of arrival</label>
+							<br>
+							<input type="text" size="12" id="startDateField" name="startDateField"/>
+							<br><br>
+							<label for="endDate">Date of departure</label>
+							<br>
+							<input type="text" size="12" id="endDateField" name="endDateField"/>
+							<br><br>
+							<input type="submit" name="submit" value = "Spooke on">
+							<input type="hidden" name= "operation" value="findRooms">
+							
+							<% if(request.getParameter("startDateField") == "" || request.getParameter("endDateField") == ""){%>
+								 <p style= "color: red"><strong>Please insert dates</strong><p> 
+								<% }
+								%>
+							</form>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	<div id="footer">
+		<div>
+			<ul class="navigation">
+				<li class="active">
+						<a href="Startpage.html">Home</a>
+					</li>
+					<li>
+						<a href="Booking.jsp">Booking</a>
+					</li>
+					<li>
+						<a href="Rooms.html">Rooms</a>
+					</li>
+					<li>
+						<a href="About.html">About</a>
+					</li>
+					<li>
+						<a href="Test.html">Test</a>
+					</li>
+			</ul>
+		</div>
+		<p>  © Ghost Hotel. Lunds Universitet. Instutitionen av Informatik. All Rights Reserved. 2015</p>
+	</div>
+	<script type="text/javascript">
+		window.onload = function(){
+			new JsDatePick({
+				useMode:2,
+				target:"startDateField",
+				dateFormat:"%d-%m-%y",
+				});
+			new JsDatePick({
+				useMode:2,
+				target:"endDateField",
+				dateFormat:"%d-%m-%y"
+				});
+				};					
+	</script>
+</body>
+</html>
+

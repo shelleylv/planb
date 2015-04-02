@@ -51,7 +51,7 @@
 									if (listRoom !=null){
 										for (Room r:listRoom){
 											%>
-											<p>Room number: <%=r.getRoomNr()%>  Room type: <%=r.getRoomType()%>  Capacity: <%=r.getCapacity()%>  Price: <%=r.getPrice()%> <p>
+											<p><span>Room number: </span><%=r.getRoomNr()%>  <span>Room type: </span><%=r.getRoomType()%>  <span>Capacity: </span><%=r.getCapacity()%>  <span>Price: </span><%=r.getPrice()%> <p>
 											<hr>
 										<%}
 										}
@@ -96,7 +96,7 @@
 							<input type="hidden" name= "operation" value="findRooms">
 							
 							<% if(request.getParameter("startDateField") == "" || request.getParameter("endDateField") == ""){%>
-								 <p>Please insert dates<p> 
+								 <p style= "color: red"><strong>Please insert dates</strong><p> 
 								<% }
 								%>
 							</form>

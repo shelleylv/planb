@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ghost Hotel Test Page</title>
+</head>
+<body>
+
+		<p>BeanTest:<br></p>
+		<form action="TestServlet" method="get" name="youTypeItForm">
+				<input type="text" name="suit" size=60 value=/>
+				<input type="submit" value="Run" />
+		</form>
+		
+		<hr>
+		<p>TestRoom:<br></p>
+		<form action="TestServlet" method="get" name="youPickItForm">
+				<select name="suite" size="2" multiple>
+						<option value="hotel.project.junit.ejb.BeanTest">
+								hotel.project.junit.ejb.BeanTest</option>
+				</select>
+				<input type="submit" value="Run" />
+		</form>
+
+</body>
+</html>

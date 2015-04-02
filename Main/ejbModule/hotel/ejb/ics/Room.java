@@ -18,15 +18,12 @@ import javax.persistence.Table;
 			     query="SELECT r FROM Room r WHERE r.roomType LIKE :roomType "
 			     		+ "AND r.capacity LIKE :capacity "
 			     		+ "AND r.price LIKE :price "
-			     		+ "AND r.roomNr NOT IN(SELECT b.aRoom.roomNr FROM Booking b WHERE b.startDate > :startDate" 
-			     		+ "And b.endDate < :endDate )"
-			     		+ "AND r.roomNr NOT IN(SELECT b.aRoom.roomNr FROM Booking "
+			     		+ "AND r.roomNr NOT IN (SELECT b.aRoom.roomNr FROM Booking b WHERE b.startDate > :startDate " 
+			     		+ "AND b.endDate < :endDate ) "
+			     		+ "AND r.roomNr NOT IN (SELECT b.aRoom.roomNr FROM Booking b "
 			     		+ "WHERE b.startDate < :endDate " 
-			     		+ "AND b.endDate > :startDate ")
+			     		+ "AND b.endDate > :startDate)")
 })
-
-})
-
 @Table (name="Room")
 public class Room implements Serializable {
 	

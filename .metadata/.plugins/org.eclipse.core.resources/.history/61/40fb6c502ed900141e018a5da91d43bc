@@ -1,0 +1,14 @@
+package hotel.client.junit.ejb;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BeanTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,7 @@
+package hotel.client.junit.ejb;
+
+import junit.framework.TestCase;
+
+public class BeanTest extends TestCase {
+
+}

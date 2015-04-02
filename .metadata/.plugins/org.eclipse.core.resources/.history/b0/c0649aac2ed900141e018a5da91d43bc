@@ -1,0 +1,83 @@
+<!--STARTSIDA-->
+
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+	<title>Ghost Hotel</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+	<div id="page">
+			<div id="header">
+				<img src ="bilder/ghlogo.jpg" alt="header"/>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+							<a href="Startpage.html"><strong>Home</strong></a>
+						</li>
+						<li>
+							<a href="Booking.html"><strong>Booking</strong></a>
+						</li>
+						<li>
+							<a href="Rooms.html"><strong>Rooms</strong></a>
+						</li>
+						<li>
+							<a href="About.html"><strong>About</strong></a>
+						</li>
+						<li>
+							<a href="Test.html"><strong>Test</strong></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents"> 
+				
+				<div id="main">
+						<div id="infobox">
+							<div class="sidebox">
+								<a href="Rooms.html"> <img src="bilder/roomsmall.jpg" alt="Img"></a> <!--Refererad till room genom bild-->
+							</div>
+							<div class="sidebox">
+								<a href="Booking.html"> <img src="bilder/bookingsmall.jpg" alt="Img"></a> <!--Refererad till booking genom bild-->
+							</div>
+							<div class="sidebox">
+								 <a href="About.html"> <img src="bilder/aboutsmall.jpg" alt="Img"></a> <!--Refererad till about genom bild-->
+							</div>
+						</div>
+					<h2>Welcome to Ghost Hotel</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<br>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+					The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+				 </div>
+			</div>
+			
+	</div>
+	<div id="footer">
+		<div>
+			<ul class="navigation">
+				<li class="active">
+						<a href="Startpage.html">Home</a>
+					</li>
+					<li>
+						<a href="Booking.html">Booking</a>
+					</li>
+					<li>
+						<a href="Rooms.html">Rooms</a>
+					</li>
+					<li>
+						<a href="About.html">About</a>
+					</li>
+					<li>
+						<a href="Test.html">Test</a>
+					</li>
+			</ul>
+		</div>
+		<p> © Ghost Hotel. Lunds Universitet. Instutitionen av Informatik. All Rights Reserved. 2015</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,83 @@
+package hotel.ejb.ics;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@NamedQueries({
+	 @NamedQuery(name="Room.findByAvailability", 
+			     query="SELECT r FROM Room r WHERE r.roomType LIKE :roomType "
+			     		+ "AND r.capacity LIKE :capacity "
+			     		+ "AND r.price LIKE :price "
+			     		+ "AND r.roomNr NOT IN(SELECT b.aRoom.roomNr FROM Booking b WHERE b.startDate > :startDate " 
+			     		+ "AND b.endDate < :endDate ) "
+			     		+ "AND r.roomNr NOT IN(SELECT b.aRoom.roomNr FROM Booking b "
+			     		+ "WHERE b.startDate < :endDate " 
+			     		+ "AND b.endDate > :startDate ")
+})
+@Table (name="Room")
+public class Room implements Serializable {
+	
+	private String roomNr;
+	private String roomType;
+	private int capacity;
+	private int price;
+	private Set<Booking> bookings;
+	
+	@Id
+	@Column(name="roomNr")
+	public String getRoomNr(){
+		return roomNr;
+	}
+	
+	public void setRoomNr (String roomNr){
+		this.roomNr = roomNr;
+	}
+	
+	@Column (name="roomType")
+	public String getRoomType (){
+		return roomType;
+	}
+	
+	public void setRoomType(String roomType){
+		this.roomType = roomType;
+	}
+	
+	@Column (name="capacity")
+	public int getCapacity(){
+		return capacity;
+	}
+	
+	public void setCapacity (int capacity){
+		this.capacity = capacity;
+	}
+	
+	@Column (name="price")
+	public int getPrice(){
+		return price;
+	}
+	
+	public void setPrice(int price){
+		this.price= price;
+	}
+	
+	@OneToMany (mappedBy="aRoom", fetch=FetchType.EAGER)
+	public Set<Booking> getBookings(){
+		return bookings;
+	}
+	
+	public void setBookings (Set <Booking> bookings){
+		this.bookings = bookings;
+	}
+	
+}
+	

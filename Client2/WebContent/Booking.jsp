@@ -95,7 +95,7 @@
 							<input type="submit" name="submit" value = "Spooke on">
 							<input type="hidden" name= "operation" value="findRooms">
 							
-							<% if(request.getParameter("startDateField") == "" && request.getParameter("endDateField") == ""){%>
+							<% if(request.getParameter("startDateField") == "" || request.getParameter("endDateField") == ""){%>
 								 <p>Please insert dates<p> 
 								<% }
 								%>

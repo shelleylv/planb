@@ -19,7 +19,7 @@ public class BeanTest extends TestCase {
 		super.setUp();
 		Context context = new InitialContext();
 		
-		room=(RoomEAOLocal)context.lookup("java:app/Hotell2EjbProject/RoomEAOImpl!hotel.eao.ics.RoomEAOLocal");
+		room=(RoomEAOLocal)context.lookup("java:app/Main/RoomEAOImpl!hotel.eao.ics.RoomEAOLocal");
 	}
 
 	public void testRoom(){

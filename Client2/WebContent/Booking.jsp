@@ -43,13 +43,13 @@
 							<p>In the booking table below, plesae fill out the following information.<p>
 							<div id="booking">
 								<div id=resultbox>
-								<p> Available rooms are listed below</p>
+								<p class ="list"> Available rooms are listed below</p>
 								<% List<Room> listRoom = (List<Room>) request.getAttribute ("availableRooms");
 									
 									if (listRoom !=null){
 										for (Room r:listRoom){
 											%>
-											<p><span>Room number: </span><%=r.getRoomNr()%>  <span>Room type: </span><%=r.getRoomType()%>  <span>Capacity: </span><%=r.getCapacity()%>  <span>Price: </span><%=r.getPrice()%> <span id= "pris"> (per night)</span><p>
+											<p class ="span"><span>Room number: </span><%=r.getRoomNr()%>  <span>Room type: </span><%=r.getRoomType()%>  <span>Capacity: </span><%=r.getCapacity()%>  <span>Price: </span><%=r.getPrice()%> <span class = "pris"> (per night)</span><p>
 											<hr>
 										<%}
 										}

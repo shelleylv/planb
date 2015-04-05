@@ -271,3 +271,19 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-04-05 21:41:53.508
 !MESSAGE Module Client2 on WildFly 8.x still not ready to be shown in browser. Aborting delay.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2015-04-05 23:27:28.866
+!MESSAGE The server "WildFly 8.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_31 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-04-05 23:27:30.392
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-04-05 23:27:37.916
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-04-05 23:28:05.012
+!MESSAGE Module Client2 on WildFly 8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-04-05 23:28:25.076
+!MESSAGE Module Client2 on WildFly 8.x still not ready to be shown in browser. Aborting delay.

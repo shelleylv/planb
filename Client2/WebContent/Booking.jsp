@@ -40,9 +40,7 @@
 			</div>
 			<div id="contents">
 				<div id="bookingbox">
-					<div>
-						<div>
-							<p>In the booking table below, please fill out the following information.</p>
+							<p>In the booking table below, plesae fill out the following information.<p>
 							<div id="booking">
 								<div id=resultbox>
 								<p> Available rooms are listed below</p>
@@ -51,7 +49,7 @@
 									if (listRoom !=null){
 										for (Room r:listRoom){
 											%>
-											<p><span>Room number: </span><%=r.getRoomNr()%>  <span>Room type: </span><%=r.getRoomType()%>  <span>Capacity: </span><%=r.getCapacity()%>  <span>Price: </span><%=r.getPrice()%> <p>
+											<p><span>Room number: </span><%=r.getRoomNr()%>  <span>Room type: </span><%=r.getRoomType()%>  <span>Capacity: </span><%=r.getCapacity()%>  <span>Price: </span><%=r.getPrice()%> <span id= "pris"> (per night)</span><p>
 											<hr>
 										<%}
 										}
@@ -101,10 +99,6 @@
 								%>
 							</form>
 						</div>
-
-
-					</div>
-				</div>
 			</div>
 		</div>
 		</div>

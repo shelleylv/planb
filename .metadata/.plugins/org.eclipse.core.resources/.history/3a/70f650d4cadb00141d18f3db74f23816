@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+	<title>Ghost Hotel</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<div id="page">
+			<div id="header">
+				<img src ="bilder/ghlogo.jpg" alt="header"/>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+						<a href="Startpage.html"><strong>Home</strong></a>
+						</li>
+						<li>
+							<a href="Booking.jsp"><strong>Booking</strong></a>
+						</li>
+						<li>
+							<a href="Rooms.html"><strong>Rooms</strong></a>
+						</li>
+						<li>
+							<a href="About.html"><strong>About</strong></a>
+						</li>
+						<li>
+							<a href="Test.html"><strong>Test</strong></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contents">
+				<div id="roompage">
+					<div>
+						<div id="roombox">
+							<h4> At the Ghost Hotel, we offer a different variety of rooms for guests brave enough to stay a night with all of our unseen guests. Have a look to see which room suits your courage.</h4>
+							<ul id="rooms">
+								<li>
+									<img src="bilder/standardroom.jpg" alt="Img">
+									<h2>Standard Room</h2>
+									<p>
+										The standard room offers a true class of spookiness. With a single bed and bathroom for one, you alone are able to witness the "bedroom ghost" in real life. 
+									</p>
+									<span class="rate"><strong>Rate: 400 SEK / Night</strong></span>
+								</li>
+								
+								<li>
+									<img src="bilder/doubleroom.jpg" alt="Img">
+									<h2>Double Room</h2>
+									<p>
+										The double room offers a double bed and bathroom fit for guests who can handle the midnight ghost whispers. Rest well in this relaxing and not silent room. 
+									</p>
+									<span class="rate"><strong>Rate: 750 SEK / Night</strong></span>
+								</li>
+								<li>
+									<img src="bilder/suiteroom.jpg" alt="Img">
+									<h2>Suite Room</h2>
+									<p>
+										The hotel's suite offers a space for five guests with two double beds with separate bathrooms and a futon. Beware that you are not the only ones present in the room.
+									</p>
+									<span class="rate"><strong>Rate: 1200 SEK / Night</strong></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div id="footer">
+		<div>
+			<ul class="navigation">
+				<li class="active">
+						<a href="Startpage.html">Home</a>
+					</li>
+					<li>
+						<a href="Booking.jsp">Booking</a>
+					</li>
+					<li>
+						<a href="Rooms.html">Rooms</a>
+					</li>
+					<li>
+						<a href="About.html">About</a>
+					</li>
+					<li>
+						<a href="Test.html">Test</a>
+					</li>
+			</ul>
+		</div>
+		<p> © Ghost Hotel. Lunds Universitet. Instutitionen av Informatik. All Rights Reserved. 2015</p>
+	</div>
+<body>
+</body>
+</html>

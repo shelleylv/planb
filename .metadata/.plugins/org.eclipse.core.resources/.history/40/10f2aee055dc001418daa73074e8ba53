@@ -11,7 +11,7 @@
 				<div id="navigation">
 					<ul>
 						<li class="selected">
-						<a href="StartPage.html"><strong>Home</strong></a>
+						<a href="Startpage.html"><strong>Home</strong></a>
 						</li>
 						<li>
 							<a href="Booking.jsp"><strong>Booking</strong></a>
@@ -69,7 +69,7 @@
 		<div>
 			<ul class="navigation">
 				<li class="active">
-						<a href="StartPage.html">Home</a>
+						<a href="Startpage.html">Home</a>
 					</li>
 					<li>
 						<a href="Booking.jsp">Booking</a>

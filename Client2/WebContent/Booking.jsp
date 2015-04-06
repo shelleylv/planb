@@ -84,19 +84,14 @@
 							
 							<label for="startDate">Date of arrival</label>
 							<br>
-							<input type="text" size="12" id="startDateField" name="startDateField"/>
+							<input type="text" size="12" id="startDateField" name="startDateField" value =""/>
 							<br><br>
 							<label for="endDate">Date of departure</label>
 							<br>
-							<input type="text" size="12" id="endDateField" name="endDateField"/>
+							<input type="text" size="12" id="endDateField" name="endDateField" value =""/>
 							<br><br>
 							<input type="submit" name="submit" value = "Spooke on">
 							<input type="hidden" name= "operation" value="findRooms">
-							
-							<% if(request.getParameter("startDateField") == "" || request.getParameter("endDateField") == ""){%>
-								 <p style= "color: red"><strong>Please insert dates</strong><p> 
-								<% }
-								%>
 							</form>
 						</div>
 			</div>

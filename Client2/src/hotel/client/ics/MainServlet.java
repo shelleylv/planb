@@ -77,15 +77,6 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 			System.out.println(start);
 			System.out.println(end);
 
-			
-			
-			
-			//int syear = Integer.parseInt(start.substring(start.length()-4));
-			//String stemp = start.substring(3, 6);
-			//int smonth = giveIntFromMonthString(stemp);
-			//int sday = Integer.parseInt(start.substring(0, 2));
-			//Date startDate = new Date(syear, smonth, sday);
-			//System.out.println(syear +" " + smonth + " " + sday);
 			SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yy");
 			Date startDate = new Date();
 			try {
@@ -95,12 +86,6 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 				e.printStackTrace();
 			}
 			
-
-			/*int eyear = Integer.parseInt(end.substring(end.length()-4));
-			String etemp = start.substring(3, 6);
-			int emonth = giveIntFromMonthString(stemp);
-			int eday = Integer.parseInt(start.substring(0, 2));
-			Date endDate = new Date(eyear, emonth, eday);*/
 			Date endDate = new Date();
 			try {
 				endDate = formatter.parse(end);
@@ -123,33 +108,5 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 				dispatcher.forward(request, response);
 		
 	}
-	/*public int giveIntFromMonthString(String month){
-		if(month.equals("JAN")){
-			return 1;
-		} else if(month.equals("FEB")){
-			return 2;
-		}else if(month.equals("MAR")){
-			return  3;
-		}else if(month.equals("APR")){
-			return  4;
-		}else if(month.equals("MAY")){
-			return 5;
-		}else if(month.equals("JUN")){
-			return 6;
-		}else if(month.equals("JUL")){
-			return 7;
-		}else if(month.equals("AUG")){
-			return 8;
-		}else if(month.equals("SEP")){
-			return 9;
-		}else if(month.equals("OCT")){
-			return 10;
-		}else if(month.equals("NOV")){
-			return 11;
-		}else if(month.equals("DEC")){
-			return 12;
-		}
-		return 0;
-	}*/
 }
 

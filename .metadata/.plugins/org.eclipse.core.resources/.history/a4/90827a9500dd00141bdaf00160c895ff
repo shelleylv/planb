@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+	<title> Ghost Hotel</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<a href="http://localhost:8080/Client2/TestServlet?suite=hotel.client.junit.ejb.BeanTest"><p style = "color: white">Klicka här för att utföra test</p></a>
+
+</body>
+</html>

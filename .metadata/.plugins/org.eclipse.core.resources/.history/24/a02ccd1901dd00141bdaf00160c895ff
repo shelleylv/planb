@@ -33,6 +33,25 @@
 <a href="http://localhost:8080/Client2/TestServlet?suite=hotel.client.junit.ejb.BeanTest"><p style = "color: white">Klicka här för att utföra test</p></a>
 
 <div id="footer">
+		<div>
+			<ul class="navigation">
+				<li class="active">
+					<a href="StartPage.html">Home</a>
+				</li>
+				<li>
+					<a href="Booking.jsp">Booking</a>
+				</li>
+				<li>
+					<a href="Rooms.html">Rooms</a>
+				</li>
+				<li>
+					<a href="About.html">About</a>
+				</li>
+				<li>
+					<a href="Test.html">Test</a>
+				</li>
+			</ul>
+		</div>
 		<p> © Ghost Hotel. Lunds Universitet. Instutitionen av Informatik. All Rights Reserved. 2015</p>
 	</div>
 

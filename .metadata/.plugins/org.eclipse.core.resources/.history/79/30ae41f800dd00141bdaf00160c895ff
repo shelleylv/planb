@@ -32,9 +32,5 @@
 			</div>
 <a href="http://localhost:8080/Client2/TestServlet?suite=hotel.client.junit.ejb.BeanTest"><p style = "color: white">Klicka här för att utföra test</p></a>
 
-<div id="footer">
-		<p> © Ghost Hotel. Lunds Universitet. Instutitionen av Informatik. All Rights Reserved. 2015</p>
-	</div>
-
 </body>
 </html>

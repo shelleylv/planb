@@ -443,3 +443,9 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-04-08 13:42:43.063
 !MESSAGE Module Client2 on WildFly 8.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-04-08 13:50:10.973
+!MESSAGE Module Client2 on WildFly 8.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2015-04-08 13:50:31.054
+!MESSAGE Module Client2 on WildFly 8.x still not ready to be shown in browser. Aborting delay.

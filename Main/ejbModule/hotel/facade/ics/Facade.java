@@ -11,15 +11,8 @@ import hotel.ejb.ics.Room;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
-/**
- * Session Bean implementation class Facade
- */
 @Stateless
 public class Facade implements FacadeLocal {
-
-    /**
-     * Default constructor. 
-     */
 	
 	@EJB
 	private RoomEAOLocal roomEAO;
@@ -28,7 +21,6 @@ public class Facade implements FacadeLocal {
 	private BookingEAOLocal bookingEAO;
 	
 	public Facade() {
-        // TODO Auto-generated constructor stub
     }
     
 	  public List<Room> findByAvalability(String capacity, String roomType, int price, Date startDate, Date endDate){

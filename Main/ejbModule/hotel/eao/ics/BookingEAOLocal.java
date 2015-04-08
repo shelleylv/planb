@@ -10,7 +10,5 @@ import javax.ejb.Local;
 public interface BookingEAOLocal {
 	public Booking findByStartDate(String startDate);
 	public Booking findByEndDate(Date endDate);
-
 	
-
 }

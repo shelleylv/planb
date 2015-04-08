@@ -10,15 +10,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
-/**              
- * Session Bean implementation class RoomEAO
- */
 @Stateless
 public class RoomEAOImpl implements RoomEAOLocal {
 
-    /**
-     * Default constructor. 
-     */
 	@PersistenceContext (unitName="LabEJBSql")
 	private EntityManager em;
 	
@@ -36,7 +30,6 @@ public class RoomEAOImpl implements RoomEAOLocal {
 
 	
     public RoomEAOImpl() {
-        // TODO Auto-generated constructor stub
     }
     
     public Room findByRoomNr (String roomNr){

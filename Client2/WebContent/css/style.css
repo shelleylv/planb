@@ -314,6 +314,12 @@ body{
 	font-weight: bold;
 }
 
+/*-------TEST-------*/
+#test {
+	color: white;
+	font-size: 20px;
+}
+
 /*-----------FOOTER------------------*/
 
 #footer{
@@ -375,3 +381,4 @@ body{
 	text-align: center;
 	text-transform: none;
 }
+

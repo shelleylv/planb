@@ -33,14 +33,4 @@ public class BookingEAOImpl implements BookingEAOLocal {
     public Booking findByEndDate (Date endDate){
     	return em.find(Booking.class, endDate);
     }
-    
-    
- /*
-    public Booking getStartDate(Date startDate){
-    
-    TypedQuery<Booking> b = em.createNamedQuery("Booking.findByStartDate", Booking.class);
-    b.setParameter("startDate", startDate);
-    List<Booking> bookings = b.getResultList();
-    	return bookings; 
-    } */
 }

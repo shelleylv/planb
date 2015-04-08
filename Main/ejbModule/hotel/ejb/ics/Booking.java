@@ -34,7 +34,6 @@ public class Booking implements Serializable {
 		public void setBookingNr(String bookingNr) {
 			this.bookingNr = bookingNr;
 		}
-		//hej
        	@Temporal (TemporalType.DATE)
        	@Column(name="startDate")
        	public Date getStartDate() {

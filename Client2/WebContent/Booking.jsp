@@ -40,7 +40,7 @@
 			</div>
 			<div id="contents">
 				<div id="bookingbox">
-							<p>In the booking table below, plesae fill out the following information.<p>
+							<p>In the booking table below, please fill out the following information.<p>
 							<div id="booking">
 								<div id=resultbox>
 								<p class ="list"> Available rooms are listed below</p>
